@@ -1,0 +1,6 @@
+public - stores public assets like images and logos.
+src- source code.
+assets - main.jsx --> it imports App component
+        - App.jsx --> we write the code there
+        - index.html --> creates html structure.
+        
