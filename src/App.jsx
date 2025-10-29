@@ -27,6 +27,7 @@ import React, { Component } from 'react'
 // import Basic from './class-components/Basic'
 // import UsingProps from './class-components/UsingProps'
 import Counter from './class-components/Counter'
+import Counter_homework from './class-components/Counter_homework'
 
 export default class App extends Component {
   render() {
@@ -35,7 +36,9 @@ export default class App extends Component {
         {/* ------------------Class components------------*/}
         {/* <Basic/> */}
         {/* <UsingProps name = "Saran"/> */}
-        <Counter/>
+        {/* <Counter/> */}
+        <Counter_homework/>
+
       </div>
     )
   }

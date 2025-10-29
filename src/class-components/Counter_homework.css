@@ -1,0 +1,24 @@
+body {
+  margin: auto;
+  padding: 0%;
+}
+
+button {
+  display: inline;
+  /* flex-direction: column; */
+  margin-left: 20%;
+  padding: 20px;
+  color: yellow;
+  background-color: rgb(23, 160, 252);
+  width: 250px;
+  font-size: 80px;
+}
+button:hover {
+  background-color: blue;
+}
+
+h2 {
+  font-size: 100px;
+  color: hsl(51, 100%, 31%);
+  margin-left: 30%;
+}
