@@ -5,7 +5,6 @@ body {
 
 button {
   display: inline;
-  /* flex-direction: column; */
   margin-left: 20%;
   padding: 20px;
   color: yellow;

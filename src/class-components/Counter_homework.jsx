@@ -16,9 +16,9 @@ export default class Counter_homework extends Component {
         if (this.state.count > 0) {
             this.setState({ count: this.state.count - 1 });
         }
-        if (this.state.count <= 0) {
-            alert('ENTHADA IDI VENOO 😌😌');
-        }
+        // if (this.state.count <= 0) {
+        //     alert('ENTHADA IDI VENOO 😌😌');
+        // }
     }
 
     render() {
