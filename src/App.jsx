@@ -24,8 +24,10 @@
 
 
 import React, { Component } from 'react'
-import UnMounting from './class-components/life-cycle-methods/UnMounting'
-// import Should_update from './class-components/life-cycle-methods/Should_update'
+// import UnMounting from './class-components/life-cycle-methods/UnMounting'
+// import Timer from './class-components/life-cycle-methods/Timer'
+// import ButtonUnMount from './class-components/life-cycle-methods/ButtonUnmount'
+import Should_update from './class-components/life-cycle-methods/Should_update'
 // import Updating from './class-components/life-cycle-methods/Updating'
 // import Mounting from './class-components/life-cycle-methods/Mounting'
 // import Basic from './class-components/Basic'
@@ -44,8 +46,10 @@ export default class App extends Component {
         {/* <Counter_homework/> */}
         {/* <Mounting/> */}
         {/* <Updating/> */}
-        {/* <Should_update/> */}
-        <UnMounting/>
+        <Should_update/>
+        {/* <UnMounting/> */}
+        {/* <Timer/> */}
+        {/* <ButtonUnMount/> */}
 
       </div>
     )
