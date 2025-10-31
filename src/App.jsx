@@ -4,8 +4,14 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-// const App = () => {
-//   return (
+import Props from "./functional-components/Props"
+
+// import State from "./functional-components/State"
+
+// import Basic from "./functional-components/Basic"
+
+const App = () => {
+  return (
 <>
   {/* -------------------EmbeddingExpression-----------------*/}
   {/* <Welcome/> */}
@@ -14,20 +20,27 @@
   {/* <Reandering_List/> */}
 
 
+  {/*-------------functional Components-----------------*/}
+
+  {/* <Basic/> */}
+  {/* <State/> */}
+  <Props/>
+
+
 </>
 
 
-//   )
-// }
+  )
+}
 
-// export default App
+export default App
 
 
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 // import UnMounting from './class-components/life-cycle-methods/UnMounting'
 // import Timer from './class-components/life-cycle-methods/Timer'
 // import ButtonUnMount from './class-components/life-cycle-methods/ButtonUnmount'
-import Should_update from './class-components/life-cycle-methods/Should_update'
+// import Should_update from './class-components/life-cycle-methods/Should_update'
 // import Updating from './class-components/life-cycle-methods/Updating'
 // import Mounting from './class-components/life-cycle-methods/Mounting'
 // import Basic from './class-components/Basic'
@@ -35,24 +48,25 @@ import Should_update from './class-components/life-cycle-methods/Should_update'
 // import Counter from './class-components/Counter'
 // import Counter_homework from './class-components/Counter_homework'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        {/* ------------------Class components------------*/}
-        {/* <Basic/> */}
-        {/* <UsingProps name = "Saran"/> */}
-        {/* <Counter/> */}
-        {/* <Counter_homework/> */}
-        {/* <Mounting/> */}
-        {/* <Updating/> */}
-        <Should_update/>
-        {/* <UnMounting/> */}
-        {/* <Timer/> */}
-        {/* <ButtonUnMount/> */}
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         {/* ------------------Class components------------*/}
+//         {/* <Basic/> */}
+//         {/* <UsingProps name = "Saran"/> */}
+//         {/* <Counter/> */}
+//         {/* <Counter_homework/> */}
+//         {/* <Mounting/> */}
+//         {/* <Updating/> */}
+//         <Should_update/>
+//         {/* <UnMounting/> */}
+//         {/* <Timer/> */}
+//         {/* <ButtonUnMount/> */}
 
-      </div>
-    )
-  }
-}
+//       </div>
+//     )
+//   }
+// }
+
 

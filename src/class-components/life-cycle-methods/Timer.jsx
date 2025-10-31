@@ -19,7 +19,7 @@ class Timer extends Component {
   componentWillUnmount() {
     console.log("Clearing interval...");
     clearInterval(this.timer);
-    console.log("Component will unmount, interval cleared ✅");
+    console.log("Component will unmount, interval cleared ");
   }
 
   render() {
