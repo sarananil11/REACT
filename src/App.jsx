@@ -4,7 +4,13 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import Props from "./functional-components/Props"
+// import UseState from "./functional-components/Hooks/UseEffect-Hook/UseState"
+
+// import UserList from "./functional-components/Hooks/UseEffect-Hook/UserList"
+
+// import Timer from "./functional-components/Hooks/UseEffect-Hook/Timer"
+
+// import Props from "./functional-components/Props"
 
 // import State from "./functional-components/State"
 
@@ -24,7 +30,10 @@ const App = () => {
 
   {/* <Basic/> */}
   {/* <State/> */}
-  <Props/>
+  {/* <Props/> */}
+  {/* <Timer/> */}
+  {/* <UserList/> */}
+  {/* <UseState/> */}
 
 
 </>
