@@ -4,6 +4,15 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import Home from "./functional-components/Hooks/UseContext-hook/dark&light-mode/Home"
+import { ThemeProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/ThemeContext"
+import { UserApiProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserApiContext"
+import UserList from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserList"
+
+// import ToggleButton from "./functional-components/Hooks/UseState/ToggleButton"
+
+// import ProfileForm from "./functional-components/Hooks/UseState/ProfileForm"
+
 // import UseState from "./functional-components/Hooks/UseEffect-Hook/UseState"
 
 // import UserList from "./functional-components/Hooks/UseEffect-Hook/UserList"
@@ -34,7 +43,18 @@ const App = () => {
   {/* <Timer/> */}
   {/* <UserList/> */}
   {/* <UseState/> */}
+  {/* <ProfileForm/> */}
+  {/* <ToggleButton/> */}
 
+
+
+  {/*--------------usecontext hook------------*/}
+  {/* <ThemeProvider>
+    <Home/>
+  </ThemeProvider> */}
+  <UserApiProvider>
+    <UserList/>
+  </UserApiProvider>
 
 </>
 

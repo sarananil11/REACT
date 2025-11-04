@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ToggleButton = () => {
 
-    const [isOn,setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(false);
 
   return (
     <div>
