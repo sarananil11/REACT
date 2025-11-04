@@ -4,10 +4,13 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import Home from "./functional-components/Hooks/UseContext-hook/dark&light-mode/Home"
-import { ThemeProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/ThemeContext"
-import { UserApiProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserApiContext"
-import UserList from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserList"
+// import Home from "./functional-components/Hooks/UseContext-hook/dark&light-mode/Home"
+// import { ThemeProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/ThemeContext"
+// import { UserApiProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserApiContext"
+// import UserList from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserList"
+import AddTodo from "./functional-components/Hooks/UseContext-hook/todo-list/AddTodo"
+import { TodoProvider } from "./functional-components/Hooks/UseContext-hook/todo-list/TodoContext"
+import TodoList from "./functional-components/Hooks/UseContext-hook/todo-list/TodoList"
 
 // import ToggleButton from "./functional-components/Hooks/UseState/ToggleButton"
 
@@ -27,39 +30,48 @@ import UserList from "./functional-components/Hooks/UseContext-hook/dark&light-m
 
 const App = () => {
   return (
-<>
-  {/* -------------------EmbeddingExpression-----------------*/}
-  {/* <Welcome/> */}
-  {/* <Calling_function/> */}
-  {/* <Conditional/> */}
-  {/* <Reandering_List/> */}
+    <>
+      {/* -------------------EmbeddingExpression-----------------*/}
+      {/* <Welcome/> */}
+      {/* <Calling_function/> */}
+      {/* <Conditional/> */}
+      {/* <Reandering_List/> */}
 
 
-  {/*-------------functional Components-----------------*/}
+      {/*-------------functional Components-----------------*/}
 
-  {/* <Basic/> */}
-  {/* <State/> */}
-  {/* <Props/> */}
-  {/* <Timer/> */}
-  {/* <UserList/> */}
-  {/* <UseState/> */}
-  {/* <ProfileForm/> */}
-  {/* <ToggleButton/> */}
+      {/* <Basic/> */}
+      {/* <State/> */}
+      {/* <Props/> */}
+      {/* <Timer/> */}
+      {/* <UserList/> */}
+      {/* <UseState/> */}
+      {/* <ProfileForm/> */}
+      {/* <ToggleButton/> */}
 
 
 
-  {/*--------------usecontext hook------------*/}
-  {/* <ThemeProvider>
+      {/*--------------usecontext hook------------*/}
+      {/* <ThemeProvider>
     <Home/>
   </ThemeProvider> */}
-  <UserApiProvider>
+
+      {/* <UserApiProvider>
     <UserList/>
-  </UserApiProvider>
+  </UserApiProvider> */}
 
-</>
+      <TodoProvider>
+        <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
+          <h2>📝 Todo App</h2>
+          <AddTodo />
+          <TodoList />
+        </div>
+      </TodoProvider>
+
+    </>
 
 
-  )
+  );
 }
 
 export default App
