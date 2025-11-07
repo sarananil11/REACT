@@ -4,6 +4,12 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import SimpleForm from "./form/SimpleForm";
+
+// import RealWorld from "./react-keys/RealWorld";
+
+// import Items from "./react-keys/items";
+
 // import { Route, Routes } from "react-router-dom";
 // import Navbar from "./nested-routing/Navbar";
 // import Service from "./nested-routing/pages/services/Service";
@@ -124,11 +130,22 @@ const App = () => {
           </Routes>
         </Navbar> */}
 
+
         {/* -------------------------react-Keys------------------------ */}
           
+          {/* <Items/> */}
+          {/* <RealWorld/> */}
+
+
+          {/* --------------------------form----------------------------- */}
+
+          <SimpleForm/>
+    
+    
     </> 
 
-          
+
+
   );
 };
 
