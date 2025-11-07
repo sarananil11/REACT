@@ -5,3 +5,4 @@ assets - main.jsx --> it imports App component
         - index.html --> creates html structure.
         
 
+3gs, framermotion, tailwind

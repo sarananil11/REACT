@@ -4,13 +4,29 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+// import { Route, Routes } from "react-router-dom";
+// import Navbar from "./nested-routing/Navbar";
+// import Service from "./nested-routing/pages/services/Service";
+// import WebDev from "./nested-routing/pages/services/WebDev";
+// import AppDev from "./nested-routing/pages/services/AppDev";
+// import Design from "./nested-routing/pages/services/Design";
+
+// import { AiFillProduct } from "react-icons/ai";
+// import { Route, Routes } from "react-router-dom";
+// import ProductDetailPage from "./dynamic-routing/ProductDetailPage";
+// import Product from "./dynamic-routing/Product";
+
+// import { Link, Route, Routes } from "react-router-dom";
+// import Home from "./react-router-dom/Home";
+// import About from "./react-router-dom/About";
+
 // import Home from "./functional-components/Hooks/UseContext-hook/dark&light-mode/Home"
 // import { ThemeProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/ThemeContext"
 // import { UserApiProvider } from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserApiContext"
 // import UserList from "./functional-components/Hooks/UseContext-hook/dark&light-mode/user-list/UserList"
-import AddTodo from "./functional-components/Hooks/UseContext-hook/todo-list/AddTodo"
-import { TodoProvider } from "./functional-components/Hooks/UseContext-hook/todo-list/TodoContext"
-import TodoList from "./functional-components/Hooks/UseContext-hook/todo-list/TodoList"
+// import AddTodo from "./functional-components/Hooks/UseContext-hook/todo-list/AddTodo"
+// import { TodoProvider } from "./functional-components/Hooks/UseContext-hook/todo-list/TodoContext"
+// import TodoList from "./functional-components/Hooks/UseContext-hook/todo-list/TodoList"
 
 // import ToggleButton from "./functional-components/Hooks/UseState/ToggleButton"
 
@@ -60,19 +76,61 @@ const App = () => {
     <UserList/>
   </UserApiProvider> */}
 
-      <TodoProvider>
+      {/* <TodoProvider>
         <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
           <h2>📝 Todo App</h2>
           <AddTodo />
           <TodoList />
         </div>
-      </TodoProvider>
-
-    </>
+      </TodoProvider> */}
 
 
+      {/*---------react - router - dom ---------------*/}
+
+
+      {/* 1. -------basic--routing---------- */}
+
+      {/* <div>
+        <nav>
+          <Link to='/'>Home</Link> <br />
+          <Link to='/about'>About</Link>
+        </nav>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+
+      </Routes> */}
+
+
+      {/*2.---------Dynamic Routing------------ */}
+
+      {/* <Routes>
+        <Route path="/" element={<Product/>}/>
+        <Route path="/products/:id" element = {<ProductDetailPage/>}/>
+      </Routes> */}
+
+
+      {/*3.------------Nested - Routing----------- */}
+        {/* <Navbar>
+          <div className="container-app"></div>
+          <Routes>
+            <Route path="/services" element={<Service/>} />
+            <Route path="/web-development" element={<WebDev/>} />
+            <Route path="/app-development" element={<AppDev/>} />
+            <Route path="/design" element={<Design/>} />
+          </Routes>
+        </Navbar> */}
+
+        {/* -------------------------react-Keys------------------------ */}
+          
+    </> 
+
+          
   );
-}
+};
 
 export default App
 
