@@ -4,7 +4,9 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import SimpleForm from "./form/SimpleForm";
+import Form from "./form/Form";
+
+// import SimpleForm from "./form/SimpleForm";
 
 // import RealWorld from "./react-keys/RealWorld";
 
@@ -139,7 +141,8 @@ const App = () => {
 
           {/* --------------------------form----------------------------- */}
 
-          <SimpleForm/>
+          {/* <SimpleForm/> */}
+          <Form/>
     
     
     </> 
