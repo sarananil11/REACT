@@ -1,0 +1,74 @@
+.form-container {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 25px;
+  background: hsl(71, 100%, 74%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: hsla(0, 0%, 20%, 0.507);
+  margin-bottom: 20px;
+}
+h4 {
+  font-weight: 200;
+}
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.gender-group {
+  display: flex;
+  gap: 15px;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.btn-submit,
+.btn-cancel {
+    margin-left: 60px;
+  width: 30%;
+  background: hsl(138, 100%, 61%);
+  color: hsl(0, 0%, 0%);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-submit:hover , .btn-cancel:hover {
+  background: hsl(128, 94%, 20%);
+  color: white;
+}
