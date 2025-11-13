@@ -5,8 +5,8 @@
 // import Welcome from './embedding-expressions/Welcome'
 
 // import Form from "./form/Form";
-// import Crud from "./local-storage/Crud";
-import Work from "./local-storage/Work-1";
+import Crud from "./local-storage/Crud";
+// import Work from "./local-storage/Work-1";
 
 // import SimpleForm from "./form/SimpleForm";
 
@@ -150,8 +150,8 @@ const App = () => {
 
           {/* --------------------Local Storage ---------------------- */}
 
-          {/* <Crud/> */}
-          <Work/>
+          <Crud/>
+          {/* <Work/> */}
     
     
     </> 
