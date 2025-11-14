@@ -1,3 +1,7 @@
+body{
+  background-color: hsl(66, 100%, 92%);
+}
+
 .formnew{
     display: flex;
     flex-direction: column;

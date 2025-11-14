@@ -51,7 +51,7 @@ const Crud = () => {
         const { name, value } = e.target;
 
         setFormData(prev => ({
-            ...prev,
+            ...prev,  //spread operator
             [name]: value
         }));
     };
@@ -104,10 +104,44 @@ const Crud = () => {
         setError({});
     }
 
+
+    //Edit button
     const handleEdit = (user) => {
         setFormData(user);
-        setEditMode(false);
+        setEditMode(true);
     }
+
+    //Cancel button
+    const handleCancel = () => {
+        setFormData({ id: '', name: '', email: '', age: '' });
+        setEditMode(false);
+        setError({});
+    }
+
+    //Delete button
+    const handleDelete = (id) => {
+        setUsers(users.filter(user => user.id !== id));
+    }
+
+    //Clear button
+    const handleClearAll = (id) => {
+        if (window.confirm('Are you sure?')) {
+            setUsers([]);
+            localStorage.removeItem('users');
+            // also clear the form if in edit mode.
+            if (editMode) {
+                setFormData({
+                    id: '',
+                    name: '',
+                    email: '',
+                    age: ''
+                });
+                setEditMode(false);
+                setError({});
+            }
+        }
+    }
+
 
 
 
@@ -129,13 +163,13 @@ const Crud = () => {
 
                 {/* // age */}
                 <div>
-                    <input type="number" onChange={handleChange} name='age' value={formData.age} placeholder=' your age' />
+                    <input type="text" onChange={handleChange} name='age' value={formData.age} placeholder=' your age' />
                     {error && <p style={{ color: 'red' }} >{error.age}</p>}
                 </div>
                 <button type='submit'>{editMode ? 'Update User' : 'Add User'} </button>
                 {
                     editMode && (
-                        <button type='submit'>Cancel</button>
+                        <button type='button' onClick={handleCancel} style={{ marginLeft: '10px' }}>Cancel</button>
                     )
                 }
             </form>
@@ -143,6 +177,21 @@ const Crud = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                 <h2>User List</h2>
                 {/* clear data button  */}
+
+                {users.length > 0 && (
+                    <button onClick={handleClearAll}
+                        style={{
+                            background: 'hsla(359, 100%, 61%, 1.00)',
+                            color: 'white',
+                            border: 'none',
+                            padding: '8px 12px',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            marginLeft: '30px',
+                        }}
+
+                    >Clear All Datas</button>
+                )}
 
 
             </div>
@@ -165,7 +214,7 @@ const Crud = () => {
                                 <td>{us.age}</td>
                                 <td>
                                     <button onClick={() => handleEdit(us)} >Edit</button>
-                                    <button style={{ marginLeft: '10px' }}>Delete</button>
+                                    <button onClick={() => handleDelete(us.id)} style={{ marginLeft: '10px' }}>Delete</button>
                                 </td>
                             </tr>
                         ))}
