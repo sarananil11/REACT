@@ -4,8 +4,12 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import AxiosPost from "./Axios/AxiosPost";
+
+// import AxiosGet from "./Axios/AxiosGet";
+
 // import Form from "./form/Form";
-import Crud from "./local-storage/Crud";
+// import Crud from "./local-storage/Crud";
 // import Work from "./local-storage/Work-1";
 
 // import SimpleForm from "./form/SimpleForm";
@@ -150,8 +154,12 @@ const App = () => {
 
           {/* --------------------Local Storage ---------------------- */}
 
-          <Crud/>
+          {/* <Crud/> */}
           {/* <Work/> */}
+
+          {/* -----------------------------AXIOS--------------------------- */}
+          {/* <AxiosGet/> */}
+          <AxiosPost/>
     
     
     </> 
