@@ -4,7 +4,11 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import AxiosPost from "./Axios/AxiosPost";
+// import AxiosDelete from "./Axios/AxiosDelete";
+
+// import AxiosPut from "./Axios/AxiosPut";
+
+// import AxiosPost from "./Axios/AxiosPost";
 
 // import AxiosGet from "./Axios/AxiosGet";
 
@@ -159,7 +163,9 @@ const App = () => {
 
           {/* -----------------------------AXIOS--------------------------- */}
           {/* <AxiosGet/> */}
-          <AxiosPost/>
+          {/* <AxiosPost/> */}
+          {/* <AxiosPut/> */}
+          {/* <AxiosDelete/> */}
     
     
     </> 
