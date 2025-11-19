@@ -4,7 +4,9 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import Player from "./functional-components/Hooks/UseRef-Hook/Player";
+import ProductPage from "./design/dynamic-routing-example/ProductPage";
+
+// import Player from "./functional-components/Hooks/UseRef-Hook/Player";
 
 // import AxiosDelete from "./Axios/AxiosDelete";
 
@@ -173,7 +175,10 @@ const App = () => {
           {/* <AxiosPost/> */}
           {/* <AxiosPut/> */}
           {/* <AxiosDelete/> */}
-    
+
+
+          {/* --------------------Design------------------------------- */}
+          <ProductPage/>
     
     </> 
 
