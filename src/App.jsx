@@ -4,7 +4,8 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import ProductPage from "./design/dynamic-routing-example/ProductPage";
+import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
+
 
 // import Player from "./functional-components/Hooks/UseRef-Hook/Player";
 
@@ -90,7 +91,7 @@ const App = () => {
 
     {/* -------------------------------useRef Hook----------------------------- */}
 
-    <Player/>
+    {/* <Player/> */}
 
 
 
