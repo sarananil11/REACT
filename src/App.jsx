@@ -4,7 +4,10 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import { Route, Routes } from "react-router-dom";
 import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
+import ProductDetails from "./Design/dynamic-routing-RW-eg/ProductDetails";
+
 
 
 // import Player from "./functional-components/Hooks/UseRef-Hook/Player";
@@ -89,9 +92,9 @@ const App = () => {
       {/* <ToggleButton/> */}
 
 
-    {/* -------------------------------useRef Hook----------------------------- */}
+      {/* -------------------------------useRef Hook----------------------------- */}
 
-    {/* <Player/> */}
+      {/* <Player/> */}
 
 
 
@@ -142,7 +145,7 @@ const App = () => {
 
 
       {/*3.------------Nested - Routing----------- */}
-        {/* <Navbar>
+      {/* <Navbar>
           <div className="container-app"></div>
           <Routes>
             <Route path="/services" element={<Service/>} />
@@ -153,35 +156,40 @@ const App = () => {
         </Navbar> */}
 
 
-        {/* -------------------------react-Keys------------------------ */}
-          
-          {/* <Items/> */}
-          {/* <RealWorld/> */}
+      {/* -------------------------react-Keys------------------------ */}
+
+      {/* <Items/> */}
+      {/* <RealWorld/> */}
 
 
-          {/* --------------------------form----------------------------- */}
+      {/* --------------------------form----------------------------- */}
 
-          {/* <SimpleForm/> */}
-          {/* <Form/> */}
-
-
-
-          {/* --------------------Local Storage ---------------------- */}
-
-          {/* <Crud/> */}
-          {/* <Work/> */}
-
-          {/* -----------------------------AXIOS--------------------------- */}
-          {/* <AxiosGet/> */}
-          {/* <AxiosPost/> */}
-          {/* <AxiosPut/> */}
-          {/* <AxiosDelete/> */}
+      {/* <SimpleForm/> */}
+      {/* <Form/> */}
 
 
-          {/* --------------------Design------------------------------- */}
-          <ProductPage/>
-    
-    </> 
+
+      {/* --------------------Local Storage ---------------------- */}
+
+      {/* <Crud/> */}
+      {/* <Work/> */}
+
+      {/* -----------------------------AXIOS--------------------------- */}
+      {/* <AxiosGet/> */}
+      {/* <AxiosPost/> */}
+      {/* <AxiosPut/> */}
+      {/* <AxiosDelete/> */}
+
+
+      {/* --------------------Design------------------------------- */}
+
+      {/* <ProductPage/> */}
+      <Routes>
+        <Route path="/" element={<ProductPage />}
+        />
+        <Route path="/product/:id" element={<ProductDetails />} />
+      </Routes>
+    </>
 
 
 
