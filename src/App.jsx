@@ -5,15 +5,15 @@
 // import Welcome from './embedding-expressions/Welcome'
 
 // import Parent from "./functional-components/Hooks/useCallBack-hook/Parent";
-import UseMemo from "./functional-components/Hooks/UseMemo-Hook/UseMemo";
+// import UseMemo from "./functional-components/Hooks/UseMemo-Hook/UseMemo";
 
 // import Counter from "./functional-components/Hooks/UseReducer-hook/Counter";
 
 // import UseLayoutEffect from "./functional-components/Hooks/UseLayoutEffect/UseLayoutEffect";
 
-// import { Route, Routes } from "react-router-dom";
-// import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
-// import ProductDetails from "./Design/dynamic-routing-RW-eg/ProductDetails";
+import { Route, Routes } from "react-router-dom";
+import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
+import ProductDetails from "./Design/dynamic-routing-RW-eg/ProductDetails";
 
 
 
@@ -116,7 +116,7 @@ const App = () => {
       {/* <Parent/> */}
 
       {/* ---------------------------useMemo- Hook ------------------------------ */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
 
 
 
@@ -206,12 +206,11 @@ const App = () => {
 
       {/* --------------------Design------------------------------- */}
 
-      {/* <ProductPage/> */}
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<ProductPage />}
         />
         <Route path="/product/:id" element={<ProductDetails />} />
-      </Routes> */}
+      </Routes>
     </>
 
 
