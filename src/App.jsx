@@ -4,7 +4,9 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import BasicHookForm from "./react-hook-form/BasicHookForm";
+import YupForm from "./form/yup-react-hook-form/YupForm";
+
+// import BasicHookForm from "./form/react-hook-form/BasicHookForm";
 
 // import Parent from "./functional-components/Hooks/useCallBack-hook/Parent";
 // import UseMemo from "./functional-components/Hooks/UseMemo-Hook/UseMemo";
@@ -215,7 +217,15 @@ const App = () => {
       </Routes> */}
 
       {/* ------------------------React-hook-form-------------------------- */}
-      <BasicHookForm/>
+      {/* <BasicHookForm/> */}
+
+
+
+
+
+      {/* -------------------------Yup-with-React-Hook-Form----------------------- */}
+      <YupForm/>
+      
     </>
 
 
