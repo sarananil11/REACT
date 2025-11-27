@@ -4,6 +4,8 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import BasicHookForm from "./react-hook-form/BasicHookForm";
+
 // import Parent from "./functional-components/Hooks/useCallBack-hook/Parent";
 // import UseMemo from "./functional-components/Hooks/UseMemo-Hook/UseMemo";
 
@@ -11,9 +13,9 @@
 
 // import UseLayoutEffect from "./functional-components/Hooks/UseLayoutEffect/UseLayoutEffect";
 
-import { Route, Routes } from "react-router-dom";
-import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
-import ProductDetails from "./Design/dynamic-routing-RW-eg/ProductDetails";
+// import { Route, Routes } from "react-router-dom";
+// import ProductPage from "./Design/dynamic-routing-RW-eg/ProductPage";
+// import ProductDetails from "./Design/dynamic-routing-RW-eg/ProductDetails";
 
 
 
@@ -206,11 +208,14 @@ const App = () => {
 
       {/* --------------------Design------------------------------- */}
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<ProductPage />}
         />
         <Route path="/product/:id" element={<ProductDetails />} />
-      </Routes>
+      </Routes> */}
+
+      {/* ------------------------React-hook-form-------------------------- */}
+      <BasicHookForm/>
     </>
 
 
