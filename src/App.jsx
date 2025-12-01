@@ -4,7 +4,15 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import YupForm from "./form/yup-react-hook-form/YupForm";
+import ShoppingCart from "./functional-components/Hooks/UseReducer-hook/Cart-using-reducer/Components/ShoppingCart";
+
+// import Counter from "./functional-components/Hooks/UseReducer-hook/Counter-using-Reducer/Components/Counter";
+
+// import Counter from "./functional-components/Hooks/UseReducer-hook/Counter-seminar";
+
+
+
+// import YupForm from "./form/yup-react-hook-form/YupForm";
 
 // import BasicHookForm from "./form/react-hook-form/BasicHookForm";
 
@@ -116,6 +124,11 @@ const App = () => {
       {/* --------------------useReducer Hook-------------------------------- */}
       {/* <Counter/> */}
 
+      {/* --------------------Context-Reducer-Counter---------------------- */}
+      {/* <Counter/> */}
+      {/* -------Shopping-app------ */}
+      <ShoppingCart/>
+
       {/* ------------------------useCallBack Hook --------------------- */}
       {/* <Parent/> */}
 
@@ -216,6 +229,8 @@ const App = () => {
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes> */}
 
+      
+
       {/* ------------------------React-hook-form-------------------------- */}
       {/* <BasicHookForm/> */}
 
@@ -224,7 +239,9 @@ const App = () => {
 
 
       {/* -------------------------Yup-with-React-Hook-Form----------------------- */}
-      <YupForm/>
+      {/* <YupForm/> */}
+
+
       
     </>
 
