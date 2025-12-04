@@ -4,7 +4,9 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import CartApp from "./functional-components/Hooks/UseContext-hook/cart-context/cart_components/CartApp";
+import ReduxTodo from "../Redux/redux-todo/ReduxTodo";
+
+// import CartApp from "./functional-components/Hooks/UseContext-hook/cart-context/cart_components/CartApp";
 
 
 // import Counter from "./functional-components/Hooks/UseReducer-hook/Counter-using-Reducer/Components/Counter";
@@ -158,7 +160,7 @@ const App = () => {
 
 
         {/* ----------useContext----CartApp-------- */}
-        <CartApp/>
+        {/* <CartApp/> */}
       
 
 
@@ -246,6 +248,12 @@ const App = () => {
 
       {/* -------------------------Yup-with-React-Hook-Form----------------------- */}
       {/* <YupForm/> */}
+
+
+
+
+      {/* ----------------------------------Redux-------------------------------------- */}
+      <ReduxTodo/>
 
 
       

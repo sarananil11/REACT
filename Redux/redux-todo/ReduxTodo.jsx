@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from '../Store/store'
-import AddTodo from './AddTodo'
+import AddTodo from '../redux-todo/AddTodo'
 import TodoList from './TodoList'
 
 function ReduxTodo() {

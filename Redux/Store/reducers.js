@@ -1,4 +1,4 @@
-import { add_todo,toggle_todo,delete_todo } from "./actions";
+import { add_todo,toggle_todo,delete_todo } from "../Store/actions";
 
 const initialState = {
     todos:[],

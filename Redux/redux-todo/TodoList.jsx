@@ -11,6 +11,7 @@ const TodoList = () => {
         <li key={todo.id} style={{textDecoration:todo.completed ?
             'line-through' : 'none'
         }}>
+            <span>{todo.text}</span>
             <button onClick={()=>dispatch(toggletodo(todo.id))}>
                 {todo.completed ? 'undo':'complete'}
             </button>
