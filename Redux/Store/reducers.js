@@ -1,31 +1,31 @@
-import { add_todo,toggle_todo,delete_todo } from "../Store/actions";
+import { add_todo, toggle_todo, delete_todo } from "../Store/actions";
 
 const initialState = {
-    todos:[],
+    todos: [],
 };
 
-const todoReducer = (state = initialState,action) =>{
-    switch (action.type){
+const todoReducer = (state = initialState, action) => {
+    switch (action.type) {
         case add_todo:
-            return{
+            return {
                 ...state,
-                todos:[...state.todos , {id:Date.now(),text:action.payload,completed:false}],
+                todos: [...state.todos, { id: Date.now(), text: action.payload, completed: false }],
             };
         case toggle_todo:
-            return{
+            return {
                 ...state,
-                todos:state.todos.map((todo) =>
-                    todo.id === action.payload ? {...todo, completed:!todo.completed}:todo),
+                todos: state.todos.map((todo) =>
+                    todo.id === action.payload ? { ...todo, completed: !todo.completed } : todo),
             };
 
         case delete_todo:
-            return{
+            return {
                 ...state,
-                todos: state.todos.filter((todo)=>
-                todo.id !==action.payload),
+                todos: state.todos.filter((todo) =>
+                    todo.id !== action.payload),
             };
-            default:
-                return state;
+        default:
+            return state;
     }
 };
 export default todoReducer;

@@ -159,9 +159,9 @@ const App = () => {
       </TodoProvider> */}
 
 
-        {/* ----------useContext----CartApp-------- */}
-        {/* <CartApp/> */}
-      
+      {/* ----------useContext----CartApp-------- */}
+      {/* <CartApp/> */}
+
 
 
       {/*---------react - router - dom ---------------*/}
@@ -237,7 +237,7 @@ const App = () => {
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes> */}
 
-      
+
 
       {/* ------------------------React-hook-form-------------------------- */}
       {/* <BasicHookForm/> */}
@@ -253,10 +253,10 @@ const App = () => {
 
 
       {/* ----------------------------------Redux-------------------------------------- */}
-      <ReduxTodo/>
+      <ReduxTodo />
 
 
-      
+
     </>
 
 
