@@ -4,7 +4,8 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import ShoppingCart from "./functional-components/Hooks/UseReducer-hook/Cart-using-reducer/Components/ShoppingCart";
+import CartApp from "./functional-components/Hooks/UseContext-hook/cart-context/cart_components/CartApp";
+
 
 // import Counter from "./functional-components/Hooks/UseReducer-hook/Counter-using-Reducer/Components/Counter";
 
@@ -127,7 +128,7 @@ const App = () => {
       {/* --------------------Context-Reducer-Counter---------------------- */}
       {/* <Counter/> */}
       {/* -------Shopping-app------ */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
 
       {/* ------------------------useCallBack Hook --------------------- */}
       {/* <Parent/> */}
@@ -154,6 +155,11 @@ const App = () => {
           <TodoList />
         </div>
       </TodoProvider> */}
+
+
+        {/* ----------useContext----CartApp-------- */}
+        <CartApp/>
+      
 
 
       {/*---------react - router - dom ---------------*/}
