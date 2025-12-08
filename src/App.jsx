@@ -4,7 +4,9 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
-import ReduxTodo from "../Redux/redux-todo/ReduxTodo";
+import ShoppingApp from "../Shopping-Cart-Redux-Toolkit/components/ShoppingApp";
+
+// import ReduxTodo from "../Redux/redux-todo/ReduxTodo";
 
 // import CartApp from "./functional-components/Hooks/UseContext-hook/cart-context/cart_components/CartApp";
 
@@ -253,7 +255,11 @@ const App = () => {
 
 
       {/* ----------------------------------Redux-------------------------------------- */}
-      <ReduxTodo />
+      {/* <ReduxTodo /> */}
+
+
+      {/* ------------------------Shopping Cart Redux ------------------------- */}
+      <ShoppingApp/>
 
 
 
