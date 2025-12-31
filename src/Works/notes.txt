@@ -1,0 +1,9 @@
+useEffect - used to fetch APi
+           The useEffect hook in React allows you to perform side effects in functional components, such as data fetching, subscriptions,
+            or manual DOM manipulation. It provides a way to synchronize a component with external systems and combines the functionality of
+            class-based lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. 
+
+            # useEffect(()=> {
+                console.log("hai");
+            },[]);
+            # [] -> is called dependancy array.

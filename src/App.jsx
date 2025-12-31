@@ -4,8 +4,13 @@
 // import Reandering_List from './embedding-expressions/Reandering_List'
 // import Welcome from './embedding-expressions/Welcome'
 
+import UseEffectDataJson from "./Works/useEffect/UseEffectDataJson";
+
+// import UseEffectApiFetch from "./Works/useEffect/UseEffectApiFetch";
+
 // import ChangeColor from "./Works- from-29-12-2025/ChangeColor";
-import LikedButton from "./Works- from-29-12-2025/LikedButton";
+// import LikedButton from "./Works- from-29-12-2025/LikedButton";
+// import Counter from "./Works- from-29-12-2025/useEffect/Counter";
 // import Live from "./Works- from-29-12-2025/Live";
 
 // import ShoppingApp from "../Shopping-Cart-Redux-Toolkit/components/ShoppingApp";
@@ -269,7 +274,10 @@ const App = () => {
       {/* -------------------Works from 29--12-2025--------------------------- */}
         {/* <Live/> */}
         {/* <ChangeColor/> */}
-        <LikedButton/>
+        {/* <LikedButton/> */}
+        {/* <Counter/> */}
+        {/* <UseEffectApiFetch/> */}
+        <UseEffectDataJson/>
 
 
     </>
